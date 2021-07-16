@@ -10,6 +10,10 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
 
+// single-spa does not use pollyfills
+// so need to import zone js here as it required for angular app
+import 'zone.js/dist/zone';
+
 if (environment.production) {
   enableProdMode();
 }
