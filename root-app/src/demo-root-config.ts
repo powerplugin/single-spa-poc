@@ -1,10 +1,10 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
-  name: "@single-spa/welcome",
+  name: "@mfe/navbar",
   app: () =>
     System.import(
-      "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
+      "http://localhost:8001/main.js"
     ),
   activeWhen: ["/"],
 });
